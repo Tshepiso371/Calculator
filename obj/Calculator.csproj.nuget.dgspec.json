@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thaba\\Documents\\Calculator\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\Training Center 1\\Desktop\\Calculator\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thaba\\Documents\\Calculator\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\Training Center 1\\Desktop\\Calculator\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thaba\\Documents\\Calculator\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Training Center 1\\Desktop\\Calculator\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\thaba\\Documents\\Calculator\\Calculator\\Calculator.csproj",
-        "packagesPath": "C:\\Users\\thaba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thaba\\Documents\\Calculator\\Calculator\\obj\\",
+        "projectPath": "C:\\Users\\Training Center 1\\Desktop\\Calculator\\Calculator\\Calculator.csproj",
+        "packagesPath": "C:\\Users\\Training Center 1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Training Center 1\\Desktop\\Calculator\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thaba\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Training Center 1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
