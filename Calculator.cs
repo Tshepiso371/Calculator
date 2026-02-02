@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
+using System.IO;
+using System.Linq.Expressions;
 
 namespace CalculatorDomainDemo;
 
@@ -85,8 +89,23 @@ public class Calculator
 
         LastResult = result;
         return result;
+
+
     }
 
+public CalculationRequest GetCalculationRequest()
+    {
+        if(_history.Any())
+        {
+            throw new InvalidOperationException("No history to pull from");
+        }
+        else
+        {
+           return _history.Last(); 
+        }
+        CalculationRequest request = _history.Last();  
+        return request; 
+    }
     /*
      * ============================
      * LINQ AS QUESTIONS
@@ -128,5 +147,38 @@ public class Calculator
         }
 
         return grouped;
+    }
+
+    //writting history to file 
+    public async Task SaveHistoryAsync(string filepath)
+    {
+        List<CalculationRequest> snapshot = _history.ToList(); //makes a copy of the history we have 
+        string json = JsonSerializer.Serialize(snapshot); //
+        await File.WriteAllTextAsync(filepath, json); //
+         /*
+      try
+        {
+            await Calculator.SaveHistoryAsync("calculator_history.json");
+            Console.WriteLine("History saved ");  
+        }
+
+        catch (Exception ex)
+        {
+            Console.WriteLine("Faile to save calculator history");
+        }
+        
+    }
+    public async  Task<List<CalculationHistoryException>
+
+      if (File.Exists(filepath))
+      {
+             string json = JsonSerializer.Deserializeerialize(snapshot); //
+      }
+
+      else {
+        throw new                                                      
+      }
+     */
+        // Using saving history 
     }
 }
